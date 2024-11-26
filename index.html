@@ -3,12 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web APP</title>
-    <link rel="stylesheet" href="./src/style.css">
+    <title>Canine Vizualz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    
+    <header class="text-center py-3 bg-dark text-white">
+        <h1>Canine ViZualz</h1>
+        <p>Discover and Explore Adorable Canine Breeds</p>
+    </header>
 
-    <script src="./src/app.js"></script>
+    <main class="container mt-4">
+        <div class="text-center mb-4">
+            <select id="breed-dropdown" class="form-control w-50 mx-auto">
+                <!-- Populate breed options here -->
+                 <option value="" disabled selected>Select A Breed</Select></option>
+            </select>
+        </div>
+        <div class="carousel-container">
+            <div id="dogCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" id="carousel-images"></div>
+                <a class="carousel-control-prev" href="#dogCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#dogCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="spinner text-center mt-4" id="spinner" style="display: none;">
+            <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <div id="error-message" class="text-center text-danger mt-3" style="display: none;">
+            Oops! Something went wrong.
+        </div>
+        </main>
+        
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script type="module" src="js-modules/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,17 @@
+body{
+    background-color: brown;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    background: linear-gradient(rgb(132, 211, 242), rgb(157, 81, 81))
+}
+
+.carousel-container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.spinner{
+    margin-top: 20px;
+}
